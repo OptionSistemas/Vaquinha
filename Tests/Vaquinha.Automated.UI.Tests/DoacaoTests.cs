@@ -60,14 +60,9 @@ namespace Vaquinha.AutomatedUITests
 			webElement = _driver.FindElement(By.ClassName("btn-yellow"));
 			webElement.Click();
 
-			//IWebElement camponome = null;
-			//camponome = _driver.FindElement(By.Id("DadosPessoais_Nome"));
-			//camponome.SendKeys(doacao.DadosPessoais.Nome);
-
-
-
-			//Assert
+		    //Assert
 			_driver.Url.Should().Contain("/Doacoes/Create");
 		}
+
 	}
 }

@@ -50,7 +50,7 @@ namespace Vaquinha.Unit.Tests.DomainTests
             var valido = doacao.Valido();
 
             // Assert
-            valido.Should().Be(6, because: "valor com taxa de 20%");
+            doacao.Valor.Should().Be(6, because: "valor com taxa de 20%");
             doacao.ErrorMessages.Should().BeEmpty();
         }
 
